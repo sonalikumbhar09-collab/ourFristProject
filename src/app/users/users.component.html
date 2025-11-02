@@ -1,0 +1,19 @@
+
+
+
+<p class="alert alert-warning">
+  This is user <strong>{{ userName }}</strong> and with ID
+  <strong>{{ userId }}</strong>
+</p>
+
+<p class="alert alert-success">
+  Hello there, I'm <strong>{{ userInfo.fname }} {{ userInfo.lname }}</strong>,
+  from <strong>{{ userInfo.nativePlace }}</strong> and I'm a
+  <strong>{{ userInfo.profile }}</strong>.
+</p>
+
+<ul class="list-group">
+  <li *ngFor="let skill of skills" class="list-group-item">
+    {{ skill }}
+  </li>
+</ul>

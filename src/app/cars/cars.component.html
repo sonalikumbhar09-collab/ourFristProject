@@ -1,0 +1,19 @@
+
+
+<p class="alert alert-info">
+  This is car <strong>{{ carName }}</strong> and with ID
+  <strong>{{ carId }}</strong>
+</p>
+
+<p class="alert alert-warning">
+  Hello there, this is <strong>{{ carInfo.brand }}</strong>’s
+  <strong>{{ carInfo.model }}</strong>, which is a
+  <strong>{{ carInfo.type }}</strong> available in
+  <strong>{{ carInfo.color }}</strong>.
+</p>
+
+<ul class="list-group">
+  <li *ngFor="let feature of features" class="list-group-item">
+    {{ feature }}
+  </li>
+</ul>

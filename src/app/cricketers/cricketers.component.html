@@ -1,0 +1,14 @@
+<p class="alert alert-warning">
+  This is player <strong>{{ playerName }}</strong> and with ID <strong>{{ playerId }}</strong>
+</p>
+
+<p class="alert alert-info">
+  Plays for {{ playerInfo.team }}, as a {{ playerInfo.role }},
+  {{ playerInfo.captaincy }}, debuted in {{ playerInfo.debutYear }}.
+</p>
+
+<ul class="list-group">
+  <li *ngFor="let player of players" class="list-group-item">
+    {{ player }}
+  </li>
+</ul>

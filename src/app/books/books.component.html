@@ -1,0 +1,15 @@
+
+<p class="alert alert-success">
+  This is book <strong>{{ bookTitle }}</strong> and with ID  <strong>{{ bookId }}</strong>
+</p>
+
+<p class="alert alert-danger">
+  Written by {{ bookInfo.author }}, belonging to {{ bookInfo.genre }} genre,
+  published by {{ bookInfo.publisher }} in {{ bookInfo.year }}.
+</p>
+
+<ul class="list-group">
+  <li *ngFor="let point of highlights" class="list-group-item">
+    {{ point }}
+  </li>
+</ul>

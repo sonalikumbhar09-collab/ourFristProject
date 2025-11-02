@@ -1,0 +1,19 @@
+
+
+<p class="alert alert-info">
+    This is product <strong>{{productName}}</strong> and with id
+     <strong>{{productId}}</strong>
+</p>
+
+<p class="alert alert-danger">
+Hello there, I'm  {{userInfo.fname}} 
+{{userInfo.lname}}, from {{userInfo.nativePlace}}
+ and i'm am {{userInfo.profile}}
+</p>
+
+<ul class ="list-group">
+    <li
+        *ngFor ="let skill of skills" class="list-group-item">
+        {{skill}}
+    </li>
+</ul>

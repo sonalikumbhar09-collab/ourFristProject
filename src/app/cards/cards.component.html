@@ -1,0 +1,24 @@
+
+
+<h2 class="text-center"> SKILL CARDS</h2>
+
+<div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let post of postsArr">
+        <div class="card h-100">
+            <div class="card-header">
+                <h3 class="m-0">
+                    {{post.title}}
+                </h3>
+            </div>
+            <div class="card-body">
+                <p class="m-0">
+                   {{post.description}}
+                </p>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+            <button class="btn btn-sm btn-outline-success">Edit</button>
+             <button class="btn btn-sm btn-outline-danger">Remove</button>
+           </div>
+        </div>
+    </div>
+</div>
