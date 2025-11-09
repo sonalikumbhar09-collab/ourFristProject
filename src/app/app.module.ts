@@ -9,7 +9,10 @@ import { UsersComponent } from './users/users.component';
 import { CarsComponent } from './cars/cars.component'; 
 import { BooksComponent } from './books/books.component';
 import { CricketersComponent } from './cricketers/cricketers.component';
-
+import { ProductsComponent } from './products/products.component';
+import { TodolistsComponent } from './shared/components/todolists/todolists.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -21,12 +24,16 @@ import { CricketersComponent } from './cricketers/cricketers.component';
     CricketersComponent,
     StudentsComponent,
     CardsComponent,
+    ProductsComponent,
+    TodolistsComponent,
     
     
     
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
