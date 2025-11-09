@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Istudent } from '../models/student';
 
 @Component({
-  selector: 'app-students',
-  templateUrl: './students.component.html',
-  styleUrls: ['./students.component.scss']
+  selector: 'app-student',
+  templateUrl: './student.component.html',
+  styleUrls: ['./student.component.scss']
 })
-export class StudentsComponent{
+export class StudentComponent{
  stdArr: Array<Istudent> = [
     {
     fname:'Sonali',
